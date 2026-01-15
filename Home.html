@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen">
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <circle r="32" cy="40" cx="40"></circle>
+      </svg>
+    </div>
+
+    <div class="loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+    </div>
+
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <rect height="64" width="64" y="8" x="8"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <!-- REAL CONTENT -->
+  <div id="app" class="hidden">
+    <h1>Actual website content</h1>
+    <p>This only appears after loading finishes.</p>
+  </div>
+
+  <script src="loader.js"></script>
+</body>
+</html>
